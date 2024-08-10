@@ -1,0 +1,77 @@
+;---------------------------------------------------
+; Programa:
+; Autor:
+; Data:
+;---------------------------------------------------
+
+; Este programa verifica se uma determinada entrada é primo.
+
+; Ele exibirá alguns resultados intermediários durante o cálculo.
+
+; Ao final do seu cálculo, ele retornará ao PC 00, e exibir o resultado.
+
+; FF – Não é primo.
+
+; AA - primo
+
+
+
+LerEntrada:
+          ; Espera pela entrada do valor
+          IN   1
+          JZ   LerEntrada
+
+          ; Lê o valor
+          IN   0
+          STA  Entrada
+
+          ; 0 e 1 não são primos
+          SUB  Dois
+          JN   NãoPrimo
+
+          ; Inicie o Divisor em 1 (se tornará 2)
+          LDI  1
+          STA  Divisor
+
+Iniciar:
+          ; Incrementa o Divisor
+          LDA  Divisor
+          ADD  Um
+          STA  Divisor
+
+          ; Verifique se 2 * Divisor > Entrada
+          LDA  Entrada
+          OUT  0
+          SUB  Divisor
+          SUB  Divisor
+          JN   Primo
+
+          LDA  Entrada
+
+Dividir:
+          ; Subtraia repetidamente o Divisor da Entrada.
+          ; Se alguma vez chegar a 0, então poderá ser dividido, e não é primo.
+          ; Se ultrapassar 0 e terminar negativo, não poderia ser dividido e pode ser primo.
+
+          SUB  Divisor
+          OUT  0
+          JZ   NãoPrimo
+          JN   Iniciar
+
+          JMP  Dividir
+
+NãoPrimo:
+          LDI  255            ; FF - Não Primo
+          OUT  0
+          HLT
+
+Primo:
+          LDI  170            ; AA - Primo
+          OUT  0
+          HLT
+
+          ORG  128
+Entrada:  DS   1
+Divisor:  DS   1
+Um:       DB   1
+Dois:     DB   2
