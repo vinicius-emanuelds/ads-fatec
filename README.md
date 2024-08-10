@@ -11,6 +11,7 @@ Sou um estudante de Análise e Desenvolvimento de Sistemas, passando pelo proces
 
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Java](https://img.shields.io/badge/Java-000?style=for-the-badge&logo=java&logoColor=white)
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 </div>
 
@@ -18,8 +19,3 @@ Sou um estudante de Análise e Desenvolvimento de Sistemas, passando pelo proces
 ### 📲 Você pode me encontrar em:
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://br.linkedin.com/in/viniciusesilva)
-
-
-# Projetos Pessoais
-Repositório com finalidade de armazenar meus projetos pessoais e atividades desenvolvidads durante a graduação em Análise e Desenvolvimento de Sistemas e nos Bootcamps que participo.
-
