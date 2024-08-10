@@ -1,5 +1,4 @@
 # LINGUAGEM C
-<br>
 
 ## Ciclo do desenvolvimento
     Edição do código fonte
@@ -20,3 +19,14 @@
     Usos:
     \n - Nova linha
     \t - Tabulação horizontal
+
+### Comentários (/)
+    / - One line
+    /* - Multiline
+    /** - Documentation
+
+## TIPOS DE DADOS
+| Dado | Range |
+| --- | --- |
+| char | -128 a 127 |
+| unsigned char | 0 a 255 |

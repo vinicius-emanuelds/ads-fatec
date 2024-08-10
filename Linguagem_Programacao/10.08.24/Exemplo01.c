@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <locale.h>
 
+/**
+ * Exemplos de comentário para documentação
+ * @author Vinicius Silva
+ * @since Ago 2024
+ */
+
 int main(void){
     setlocale(LC_ALL,"Portuguese_Brazil");
 
