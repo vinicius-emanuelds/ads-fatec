@@ -18,7 +18,6 @@ int main(void) {
     for (i=0; i<5; i++){
         perfeito(numero[i]);
     }
-
 }
 
 void perfeito (int num){

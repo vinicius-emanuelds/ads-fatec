@@ -14,7 +14,7 @@
 
 ## Alguns comandos
 ### Contrabarra (\\)
-    Tem a função de escape quando usada isolada
+    Tem a função de "escape" quando usada isolada
 
     Usos:
     \n - Nova linha
@@ -25,8 +25,24 @@
     /* - Multiline
     /** - Documentation
 
+### Sizeof
+    Retorna o tamanho da variável
+
+### Constantes
+    O nome deve ser declarado todo em MAIÚSCULO
+<br>
+
 ## TIPOS DE DADOS
 | Dado | Range |
 | --- | --- |
 | char | -128 a 127 |
 | unsigned char | 0 a 255 |
+<br>
+
+## CAST ("conversão")
+    a = 10, b = 3
+
+    int x = a / b >>> 3
+    double x = a / b >>> 3.0
+
+double x = a / *(double)* b >>> 3.33
