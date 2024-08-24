@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "locale.h": "c"
     },
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
@@ -17,6 +18,6 @@
     "editor.minimap.autohide": true,
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
-    "workbench.statusBar.visible": false,
+    "C_Cpp.errorSquiggles": "disabled",
     
 }
