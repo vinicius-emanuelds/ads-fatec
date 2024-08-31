@@ -1,35 +1,35 @@
 # LINGUAGEM C
 
 ## Ciclo do desenvolvimento
-    Edição do código fonte
-    Compilação do programa
+    EdiÃ§Ã£o do cÃ³digo fonte
+    CompilaÃ§Ã£o do programa
     Linkagem do objeto
-    Execução do programa
+    ExecuÃ§Ã£o do programa
 <br>
 
 ## Anatomia de um programa
-    O programa é formado por uma ou mais funções, e cada função possui um nome exclusivo e corresponde à um bloco de código, delimitado por um par de chave {}
-    Contém um conjunto de declarações, expressões, comando de controle e chamadas à outras funções
+    O programa Ã© formado por uma ou mais funÃ§Ãµes, e cada funÃ§Ã£o possui um nome exclusivo e corresponde a um bloco de cÃ³digo, delimitado por um par de chave {}
+    ContÃ©m um conjunto de declaraÃ§Ãµes, expressÃµes, comandos de controle e chamadas a outras funÃ§Ãµes
 <br>
 
 ## Alguns comandos
 ### Contrabarra (\\)
-    Tem a função de "escape" quando usada isolada
+    Tem a funÃ§Ã£o de "escape" quando usada isolada
 
     Usos:
     \n - Nova linha
-    \t - Tabulação horizontal
+    \t - TabulaÃ§Ã£o horizontal
 
-### Comentários (/)
-    / - One line
+### ComentÃ¡rios (/)
+    // - One line
     /* - Multiline
     /** - Documentation
 
 ### Sizeof
-    Retorna o tamanho da variável
+    Retorna o tamanho da variÃ¡vel
 
 ### Constantes
-    O nome deve ser declarado todo em MAIÚSCULO
+    O nome deve ser declarado todo em MAIÃšSCULO
 <br>
 
 ## TIPOS DE DADOS
@@ -39,10 +39,10 @@
 | unsigned char | 0 a 255 |
 <br>
 
-## CAST ("conversão")
+## CAST ("conversÃ£o")
     a = 10, b = 3
 
     int x = a / b >>> 3
     double x = a / b >>> 3.0
 
-double x = a / *(double)* b >>> 3.33
+    double x = a / (double) b >>> 3.33

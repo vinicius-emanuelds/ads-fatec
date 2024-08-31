@@ -19,8 +19,8 @@ int main(void) {
   
   while (opcao != 3) {
     printf("\n ============ Menu ============ ");
-    printf("\n 1 - Converta ângulos em graus para radianos"); // E = 2,71
-    printf("\n 2 - Converta ângulos em radianos para graus"); // PI = 3,14
+    printf("\n 1 - Converta ângulos em graus para radianos");
+    printf("\n 2 - Converta ângulos em radianos para graus");
     printf("\n 3 - Sair");
     printf("\n");
     

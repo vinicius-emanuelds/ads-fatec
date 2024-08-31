@@ -6,3 +6,8 @@
 * ALT + CLICK = Multicursor
 * CTRL + K e depois Z = Zen mode (para sair, ESC)
 * CTRL + ESPAÇO = Autopreenchimento
+
+# NOMECLATURA (PADRÃO PYTHON)
+* snake_case para variáveis, funções e métodos;
+* PascalCase para classes;
+* SCREAMING_SNAKE_CASE para constantes
