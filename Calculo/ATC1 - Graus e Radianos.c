@@ -12,29 +12,18 @@
 int main(void) {
   setlocale(LC_ALL, "Portuguese_Brazil");
 
-  int k, opcao;
+  int opcao = 0;
   float deg, rad, resultado;
   
-  k = 0;
-  
-  while (opcao != 3) {
+  do {
     printf("\n ============ Menu ============ ");
     printf("\n 1 - Converta ângulos em graus para radianos");
     printf("\n 2 - Converta ângulos em radianos para graus");
     printf("\n 3 - Sair");
     printf("\n");
     
-    while (k != 1) {
-      printf("\nDigite a opção desejada: ");
+    printf("\nDigite a opção desejada: ");
       scanf("%d", &opcao);
-
-      if (opcao < 1 || opcao > 3) {
-        k = 0;
-        printf("\nOpção inválida. Por favor, escolha uma opção válida.\n");
-      } else {
-        k = 1;
-      }
-    }
 
     switch (opcao) {
       case 1:
@@ -43,7 +32,6 @@ int main(void) {
         resultado = (deg * M_PI) / 180.0;
         printf("\nO ângulo mede, aproximadamente, %.4f rad.", resultado);
         printf("\n");
-        k = 0;
         break;
 
       case 2:
@@ -52,7 +40,6 @@ int main(void) {
         resultado = (rad * 180.0) / M_PI;
         printf("\nO ângulo mede, aproximadamente, %.4fº.", resultado);
         printf("\n");
-        k = 0;
         break;
 
       case 3:
@@ -60,9 +47,9 @@ int main(void) {
         break;
 
       default:
-        k = 0;
+        printf("\nOpção inválida. Por favor, escolha uma opção válida.\n");
     }
-  }
+  } while (opcao != 3);
 
   return 0;
 }
