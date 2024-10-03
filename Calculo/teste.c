@@ -1,65 +1,88 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#include <locale.h>
+#include <string.h>
 
-// ATIVIDADE COMPUTACIONAL 1 - Graus e Radianos: 2º ADS NOTURNO 2024.02
-// ARTHUR PICHELLI MADOENHO
-// JULIA MARQUES
-// LUCAS VIEIRA DA SILVA
-// VINICIUS EMANUEL DA SILVA
+#define MAX_PRODUTOS 100
 
-int main(void) {
-    setlocale(LC_ALL, "Portuguese_Brazil");
+typedef struct {
+    char nome[50];
+    char descricao[100];
+    float valor;
+    int disponivel;
+} Produto;
 
-    int opcao;
-    double deg, rad, resultado;
+Produto produtos[MAX_PRODUTOS];
+int contador_produtos = 0;
 
-    // Inicializa a opção com um valor que não seja válido no menu.
-    opcao = 0;
+void cadastrar_produto() {
+    if (contador_produtos >= MAX_PRODUTOS) {
+        printf("Limite de produtos atingido.\n");
+        return;
+    }
 
-    while (opcao != 3) {
-        // Exibe o menu
-        printf("\n ============ Menu ============ ");
-        printf("\n 1 - Converta ângulos em graus para radianos");
-        printf("\n 2 - Converta ângulos em radianos para graus");
-        printf("\n 3 - Sair");
-        printf("\n");
+    Produto p;
+    printf("Nome do produto: ");
+    scanf(" %[^\n]", p.nome);
+    printf("Descrição do produto: ");
+    scanf(" %[^\n]", p.descricao);
+    printf("Valor do produto: ");
+    scanf("%f", &p.valor);
+    printf("Disponível para venda (1 - Sim, 0 - Não): ");
+    scanf("%d", &p.disponivel);
 
-        // Obtém a opção do usuário
-        printf("\nDigite a opção desejada: ");
-        scanf("%d", &opcao);
+    produtos[contador_produtos++] = p;
+    listar_produtos();
+}
 
-        // Verifica se a opção é válida
-        if (opcao < 1 || opcao > 3) {
-            printf("\nOpção inválida. Por favor, escolha uma opção válida.\n");
-            continue; // Pula para o próximo ciclo do while
+void listar_produtos() {
+    if (contador_produtos == 0) {
+        printf("Nenhum produto cadastrado.\n");
+        return;
+    }
+
+    // Ordenação por valor do menor para o maior
+    for (int i = 0; i < contador_produtos - 1; i++) {
+        for (int j = i + 1; j < contador_produtos; j++) {
+            if (produtos[i].valor > produtos[j].valor) {
+                Produto temp = produtos[i];
+                produtos[i] = produtos[j];
+                produtos[j] = temp;
+            }
         }
+    }
+
+    printf("\nLista de Produtos:\n");
+    printf("Nome\t\tValor\n");
+    for (int i = 0; i < contador_produtos; i++) {
+        printf("%s\t\t%.2f\n", produtos[i].nome, produtos[i].valor);
+    }
+}
+
+int main() {
+    int opcao;
+
+    do {
+        printf("\nMenu:\n");
+        printf("1. Cadastrar produto\n");
+        printf("2. Listar produtos\n");
+        printf("3. Sair\n");
+        printf("Escolha uma opção: ");
+        scanf("%d", &opcao);
 
         switch (opcao) {
             case 1:
-                printf("\nDigite a medida do ângulo, em graus: ");
-                scanf("%lf", &deg);
-                resultado = (deg * M_PI) / 180.0;
-                printf("\nO ângulo mede, aproximadamente, %.4lf rad.", resultado);
+                cadastrar_produto();
                 break;
-
             case 2:
-                printf("\nDigite a medida do ângulo, em radianos: ");
-                scanf("%lf", &rad);
-                resultado = (rad * 180.0) / M_PI;
-                printf("\nO ângulo mede, aproximadamente, %.4lfº.", resultado);
+                listar_produtos();
                 break;
-
             case 3:
-                printf("\nSaindo do programa...\n");
+                printf("Saindo...\n");
                 break;
-
             default:
-                // Esse caso nunca será alcançado devido ao check anterior, mas é uma boa prática.
-                printf("\nOpção inválida. Tente novamente.\n");
+                printf("Opção inválida.\n");
         }
-    }
+    } while (opcao != 3);
 
     return 0;
 }

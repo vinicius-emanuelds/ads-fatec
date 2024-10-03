@@ -1,7 +1,10 @@
 {
     "files.associations": {
+        "*.c": "c",
+        "*.md": "markdown",
         "stdio.h": "c",
-        "locale.h": "c"
+        "locale.h": "c",
+        "calculadora.h": "c"
     },
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,

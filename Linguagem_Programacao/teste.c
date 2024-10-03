@@ -41,9 +41,6 @@ int main(void) {
         scanf("%d", &vetor[i]);
     }
 
-    // Limpa o buffer de entrada após o uso de scanf
-    getchar();
-
     // Parte 2: Matriz 2x2 de números inteiros
     int matriz[2][2];
     printf("Insira uma matriz 2x2 de números inteiros:\n");
@@ -53,9 +50,6 @@ int main(void) {
         }
     }
 
-    // Limpa o buffer de entrada após o uso de scanf
-    getchar();
-
     // Parte 3: Somando os elementos do vetor
     int soma = somaVetor(vetor, 5);
     printf("A soma dos números do vetor é: %d\n", soma);
@@ -64,18 +58,18 @@ int main(void) {
     float media = mediaMatriz(matriz);
     printf("A média dos números da matriz é: %.2f\n", media);
 
-    // Parte 5: Manipulação de strings (código fornecido por você)
+    // Parte 5: Manipulação de strings (adicionado o código fornecido)
     char nome[21];
     char sobrenome[21];
     char nome_completo[41];
 
     printf("Digite o primeiro nome: \n");
     fgets(nome, sizeof(nome), stdin);
-    nome[strlen(nome) - 1] = '\0';  // Remove o '\n' no final da string
+    nome[strlen(nome) - 1] = '\0';
 
     printf("Digite o seu sobrenome: \n");
     fgets(sobrenome, sizeof(sobrenome), stdin);
-    sobrenome[strlen(sobrenome) - 1] = '\0';  // Remove o '\n' no final da string
+    sobrenome[strlen(sobrenome) - 1] = '\0';
 
     strcpy(nome_completo, nome);
     strcat(nome_completo, " ");
