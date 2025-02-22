@@ -1,30 +1,4 @@
 {
-  "files.associations": {
-    "*.c": "c",
-    "*.md": "markdown",
-    "stdio.h": "c",
-    "locale.h": "c",
-    "calculadora.h": "c"
-  },
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 1.8,
-  "editor.rulers": [
-    80,
-    120
-  ],
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.renderLineHighlight": "gutter",
-  "editor.fontLigatures": true,
-  "workbench.editor.labelFormat": "short",
-  "explorer.compactFolders": false,
-  "editor.semanticHighlighting.enabled": false,
-  "breadcrumbs.enabled": false,
-  "workbench.activityBar.location": "default",
-  "editor.minimap.autohide": true,
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "hidden",
-  "C_Cpp.errorSquiggles": "disabled",
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",

@@ -1,16 +1,61 @@
 {
-    "configurations": [
+  "configurations": [
+    {
+      "name": "(Windows) Iniciar",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "insira o nome do programa, por exemplo ${workspaceFolder}/a.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "console": "externalTerminal"
+    },
+    {
+      "name": "C/C++: gcc.exe Compilar e depurar o arquivo ativo",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+      "setupCommands": [
         {
-            "name": "(Windows) Iniciar",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "program": "insira o nome do programa, por exemplo ${workspaceFolder}/a.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "console": "externalTerminal"
+          "description": "Habilitar a reformatação automática para gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Definir Tipo de Desmontagem como Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
         }
-    ],
-    "version": "2.0.0"
+      ],
+      "preLaunchTask": "C/C++: gcc.exe arquivo de build ativo"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/OneDrive/Documentos/5.PROGRAMAS/1.GIT/ads-fatec/Linguagem_Programacao/19.10.2024/pjt_Faculdade",
+      "program": "d:/OneDrive/Documentos/5.PROGRAMAS/1.GIT/ads-fatec/Linguagem_Programacao/19.10.2024/pjt_Faculdade/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ],
+  "version": "2.0.0"
 }

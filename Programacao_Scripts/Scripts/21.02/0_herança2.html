@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Herança CSS</title>
+    <style>
+        .parent {
+            color: #ffffff; /* Marrom escuro */
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #000000;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #ffcc00;
+            background-color: #114c9e;
+            border: #4200be solid 1px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1 class="highlight">Título Destacado</h1>
+        <p>Este parágrafo herda a cor e a fonte do elemento pai.</p>
+        <p >Este parágrafo é destacado e herda a fonte do elemento pai.</p>
+    </div>
+</body>
+</html>
