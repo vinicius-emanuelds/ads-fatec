@@ -1,21 +1,29 @@
-# 👋 Olá, Mundo! Eu sou o Vinícius!
-Sou um estudante de Análise e Desenvolvimento de Sistemas, passando pelo processo de transição de carreira 🤯
+---
+description: >-
+  Desenvolvido por Gabriel Silva, Lucas Vieira, Marcelo Belotto e Vinicius
+  Silva.
+---
 
-##
-### 📊 Estatísticas no GitHub:
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vinicius-emanuelds&theme=transparent&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)
-</div>
+# ReuniON
 
-##
-### 🤓 Estudando atualmente:
+Bem-vindo ao ReuniON, um sistema de gerenciamento de reservas de salas de reunião. Este guia fornece instruções detalhadas sobre a instalação, navegação e uso do sistema para otimizar o uso de espaços corporativos.
 
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/Java-000?style=for-the-badge&logo=java&logoColor=white)
-![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
-</div>
+***
 
-##
-### 📲 Você pode me encontrar em:
+O ReuniON é uma ferramenta projetada para atender às necessidades de agendamento e gerenciamento de salas de reunião em organizações. Sua interface de linha de comando (CLI) é simples e eficiente, permitindo que usuários e administradores realizem operações como reservas, consultas e gerenciamento de salas e usuários.
 
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://br.linkedin.com/in/viniciusesilva)
+### **Principais Recursos:**
+
+*   **Usuários Gerais:**
+
+    * Reservar salas.
+    * Alterar ou cancelar reservas.
+    * Verificar disponibilidade.
+
+
+* **Administradores:**
+  * Cadastrar e gerenciar usuários e salas.
+  * Visualizar todas as reservas.
+  * Alterar configurações de usuários e salas.
+
+***
